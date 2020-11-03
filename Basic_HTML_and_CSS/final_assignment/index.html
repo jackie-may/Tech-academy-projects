@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+	<head>
+		<meta charset="utf-8">
+		<title>JMAY</title>
+		<link rel="stylesheet" type="text/css" href="stylesheet/portfolio.css">
+	</head>
+
+	<body class="background">
+
+		<div class="navbar">
+			<a href="#contact">contact</a>
+			<a href="#github">github</a>
+			<a href="#about">about</a>
+			<a href="#home">home</a>
+		</div>
+
+		<!--1. home section-->
+		<div id="home" >
+			<video autoplay muted loop id="leaves_video"> <!-- video will automatically play, loop, and be muted -->
+				<source src="./stylesheet/video/video2.mp4" type="video/mp4">
+				Your browser does not support HTML5 video. <!-- This message will only display if the video fails to run -->
+			</video>
+		</div>
+
+		<div class="video_text" class="main">
+			<h1>Jackie May | Portfolio</h1>
+			<p>
+			Welcome to my portfolio, I hope you enjoy your experience.</p>
+		</div>
+
+		<!--2. about section-->
+		<div class="row" id="about" style="background:rgba(0, 0, 0, 0.5) center;">
+			<div class="column_2"><!--left column-->
+				<img src="./stylesheet/images/developer.jpg" alt="people working at their computers">
+			</div>
+
+
+			<div class="column_1" > <!--right column-->
+				<h1>About</h1>
+					<p>I am a software developer who loves a challenge. I am just beginning my journey in seeking professional training but have been a lifelong learner and observer of technology and have been self taught in my endeavors to learn so far. I am very excited to see what I can learn while pursuing a software development certificate from <a href="https://www.learncodinganywhere.com/"target="_blank">The Tech Academy</a>.
+					You can contact me <a href="#contact">below</a>.
+					</p>
+			</div>
+		</div>
+
+		<!--3. github section-->
+		<div class="row" id="github" style="background:rgba(0, 0, 0, 0.5) center;">
+			<div class="column_2"> <!--left column-->
+				<h1>Github</h1>
+					<p>You can view my coding projects on my Github profile <a href="https://github.com/jackie-may">here</a>.</p>
+			</div>
+
+			<div class="column_2"> <!--right column-->
+				<a href="https://github.com/jackie-may" target="_blank"><img src="stylesheet/images/github.png" alt="github logo"></a>
+			</div>
+		</div>
+
+		<!--4. contact section-->
+		<div class="row" id="contact" style="background:rgba(0, 0, 0, 0.5) center;">
+			<div class="column_3"> <!--contact image, left column-->
+				<img src="stylesheet/images/contact-me.jpg" alt="contact_image">
+			</div>
+
+			<div class="column_2"> <!--contact form, right column-->
+				<h1>Contact me!</h1>
+					<form action="" method="get"> <!-- this specifies where to send the form data and how; it is left blank-->
+						<label>Name:</label>
+							<input type="text" placeholder="your name">
+						<label>Email:</label>
+							<input type="text" 
+							id="email" name="email" placeholder="your email">
+						<label>Love notes:</label>
+							<input type="text" id="message" name="message" placeholder="Dear Jackie, your eyes shine brighter than the stars and moon and sun above....">
+							<input type="submit" value="submit">
+					</form>
+			</div>
+		</div>
+
+
+		<footer>
+			<p>
+				&copy;<a href="mailto:jackielynnmay@gmail.com">JMAY2020</a>
+			</p>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,202 @@
+body {
+	margin: 0%; /*site displays all the way to the edge of the browser screen*/
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /*i want this font to persist throughout the document*/
+	color: orange;
+}
+
+.navbar {
+	overflow: hidden; /*ensuring content that overflows beyond the boundary of the nav is not displayed*/
+	background-color: brown;
+	position: fixed; /*keepng the navbar at the top of the screen even when scrolling*/
+	top: 0; /*no space above*/
+	width: 100%; /*navbar will span 100% of the screen8*/
+	z-index: 1; /*allows contents of the page to scroll below the nav (not on top of)*/
+	text-align: right;
+}
+
+.navbar a /*navbar text*/ {
+	float: right; /*specifies text float alignment and 'left' forces links to be inline rather than stacked on top of each other*/
+	display: block; /* forces text to align inline rather than starting new lines*/
+	color: orange; /*text color*/
+	padding: 15px 10px; /*15px top and bottom margins, 10px left and right margins*/
+	text-decoration: none; /*removes underlines that naturally appear when using the href tag*/
+	font-size: 1rem; 
+	text-align: right; /*aligns text within the container*/
+}
+
+.navbar a:hover {
+	background-color: orange; /*background color that will display when hovering over the text on the navbar*/
+	color: brown; /*font color that will display when hovering over the text on the navbar*/
+}
+
+/*this isn't currently being used but i'm going to leave it here in case i change my mind in the future
+.navbar a.active /*the active selector styles a link. allows you to make one of your a href's a block in the nav* {
+	background-color: ;
+
+} */
+
+#leaves_video {
+	position: fixed; /*fixes the video to the page*/
+	right: 0; /*no space between the edge of the video and the right edge of the page*/
+	bottom: 0; /*no space between the edge of the video and the bottom edge of the page*/
+	min-width: 100%; /*span 100% width of the page*/
+	z-index: -1; /* lower z-index than the navbar*/
+}
+
+.video_text {
+	background: rgba(0, 0, 0, 0.5) center; /*this provides a semi-transparent background for the text to sit over */
+	color: orange;
+	width: 100%;
+	padding: 20px; /* this adds padding around the text so that the background goes slightly beyond the text */
+	margin-top: 3%;
+
+}
+
+/*Table - this section covers the styling of the columns and rows within the table*/
+* { /* the asterisk is a universal selector that applies this effect to all elements on the page*/
+	box-sizing: border-box; /*this creates a box with a border within which we will place most of our text*/
+}
+
+.columm_1 {
+	float: left;
+	width: 50%; /* ensures column takes up half the page width*/
+	padding: 10px;
+	padding-top: 3%; /*ensures space between top of column and the headings*/
+	margin: 10%;
+	height: auto; /*this sets the height of our column at 400 pixels - if you change the text within the columns, you will need to adjust the column heights accordingly*/
+	/*background: rgba(0, 0, 0, 0.5) center;*/
+	text-align: center;
+}
+
+.column_2 {
+	float: left;
+	width: 50%;
+	padding: 10px;
+	padding-top: 1.9%;
+	height: 400px;
+	/*background: rgba(0, 0, 0, 0.5) center;*/
+}
+
+.column_3 {
+	float: left;
+	width: 50%;
+	padding: 10px;
+	padding-top: 3.5%;
+	height: 450px;
+	/*background: rgba(0, 0, 0, 0.5) center;*/
+}
+
+.row:after /*this inserts something after the content of selected elements*/ {
+	content: ""; /* by leaving this blank, we are allowing the footer (covered lower down) to be displayed - removing it makes the footer overwrite a column */
+	display: table; /* the display property specifies the type of display behavior; the table value tells the browser to treat the element as a table*/
+	clear: both; /* clears any other elements from floating on the left or the right of an element*/
+
+}
+
+/* heading 1 element */
+h1 {
+	text-transform: uppercase; /* we are capitalizing our headings */
+	text-align: justify;
+	margin-top: ; /* we are adding a small margin above the headings */
+	padding-bottom: 0px;
+	padding-top: 15px;
+	color: lightblue;
+}
+
+p {
+	text-align: justify;
+	/*letter-spacing: 1px; /* expands the text slightly*/
+	/*padding-left: 20px;
+	padding-right: 20px;*/
+	padding-top: 0;
+}
+
+/*center align elements - this embraces all centered text*/
+center {
+	text-align: center;
+	letter-spacing: 1px;
+	/*font-size: ;*/
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/*anchor elements*/
+a {
+	color: brown; /*all links will be blue*/
+}
+a:hover {
+	color: lightblue;
+}
+
+img {
+	/*filter: ;*/
+	border-radius: 4px; /*rounds the edges*/
+	max-width: 100%;
+	height: 340px;
+	margin-left: auto; /*margin-left and margin-right combine to center the image*/
+	margin-right: auto;
+	display: block; /*by specifying block display we can ensure our images are able to be centered */
+}
+
+/*contact form*/
+input[type=text] { /*this styles the input sections of the contact form*/
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc; /*a solid border and the color it will be*/
+	border-radius: 20px;
+	box-sizing: border-box;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	resize: vertical; /* determines how an element is resized; vertical resizes the height of the element*/
+}
+
+/*submit button*/
+input[type=submit] { /*this styles the submit button for the contact form*/
+	background-color: brown;
+	color: orange;
+	/*font-weight: bold;*/
+	padding: 12px 20px;
+	border: none;
+	border-radius: 20px;
+	cursor: pointer;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*submit button hover settings*/
+input[type=submit]:hover {
+	background-color: orange;/*background turns orange on hover*/
+	color: brown;
+	/*font-weight: bold;*/
+	transform: scale(1.2); /*increases the button increase by 1.2x*/
+	transition: transfrom 1.5s; /*transform effect last 1.5 seconds from start to finish*/
+}
+
+label {
+	color: orange;
+}
+
+form{
+	border-radius: 5px;
+	background-color: rgba(0, 0, 0, 0.5); /*this provides a semi-transparent background for the text to sit over */;
+	padding: 20px;
+}
+
+footer {
+	padding: 2%;
+	background-color: orange;
+	color: brown;
+}
+
+
+
+
+
+
+
+
+
+
+
+

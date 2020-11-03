@@ -1,0 +1,151 @@
+.center {
+	/*this code accomplishes the step 392 part 1 challenge*/
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	/*end of step 392 part 1 challenge*/
+}
+
+img {
+	/*this code accomplishes the step 392 part 2 challenge*/
+	filter: hue-rotate(20deg);
+	/*end of step 392 part 2 challenge*/
+	/*this code accomplishes the step 392 part 3 challenge*/
+	border-radius: 10px 20px 40px 80px;
+	/*end of step 392 part 3 challenge*/
+}
+
+footer {
+	/*this code accomplishes the step 393 part 2 challenge*/
+	text-align: center;
+	font-weight: bold;
+	/*end of step 393 part 2 challenge*/
+}
+
+/*this code accomplishes step 394 part 2 challenge*/
+table, th, td {
+	border: 3px dashed blueviolet;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 20px;
+}
+
+th {
+	background-color: pink;
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+}
+/*end of step 394 part 2 challenge*/
+
+/*This css accomplishes the step 395 challenge*/
+.container {
+	position: relative;
+	text-align: center;
+	color: orangered;
+}
+
+.top-left {
+	position: absolute;
+	top: 10px;
+	left: 100px;
+}
+/*end of step 395 challenge*/
+
+/*this css accomplishes the step 396 part 1 challenge*/
+.navbar {
+	overflow: hidden;
+	background-color: #395; /*step 396 part 2*/
+	position: fixed; 
+	top: 0; 
+	width: 100%; 
+	z-index: 1; /*forces the image to scroll under the nav*/
+}
+
+.navbar a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.navbar a:hover /*step 396 part 2.c*/ {
+	background: #ddd;
+	color: black;
+}
+
+.main {
+	margin-top:60px; /*forces the page content to start lower than the nav*/
+}
+/*end of 396 part 1 challenge*/
+
+/*this css accomplishes the step 397 challenge*/
+.column {
+	float: left;
+	width: 50%;
+	padding: 10px;
+	height: auto;
+	width: 45%;
+	color: blue;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+/*end of step 397 challenge*/
+
+/*this css accomplishes the step 398 challenge*/
+p:hover {
+	color: pink;
+	font-size: 200%;
+}
+/*end of step 398 challenge*/
+
+/*this css accomplishes the step 399 challenge*/
+.image {
+	display: block;
+	width: 100%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: lightblue;
+}
+
+.overlay:hover {
+	opacity: 1;
+}
+
+.text {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+/* end of the step 399 challenge*/
