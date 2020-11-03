@@ -97,7 +97,7 @@ body {
 h1 {
 	text-transform: uppercase; /* we are capitalizing our headings */
 	text-align: justify;
-	margin-top: ; /* we are adding a small margin above the headings */
+	/*margin-top: ; /* we are adding a small margin above the headings */
 	padding-bottom: 0px;
 	padding-top: 15px;
 	color: lightblue;
@@ -188,15 +188,3 @@ footer {
 	background-color: orange;
 	color: brown;
 }
-
-
-
-
-
-
-
-
-
-
-
-
