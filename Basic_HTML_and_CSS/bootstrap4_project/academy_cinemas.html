@@ -71,13 +71,13 @@
 				<h3>Now Playing:</h3>
 				<ul class="list-group">
 					<li class="list-group-item">
-						<a class="nav-link" href="#">Kong: Skull Island</a>
+						<a class="nav-link" href="#showtimes">Kong: Skull Island</a>
 					</li>
 					<li class="list-group-item">
-						<a class="nav-link" href="#">Ghost in the Shell</a>
+						<a class="nav-link" href="#showtimes">Ghost in the Shell</a>
 					</li>
 					<li class="list-group-item">
-						<a class="nav-link" href="#">Beauty and the Beast</a>
+						<a class="nav-link" href="#showtimes">Beauty and the Beast</a>
 					</li>
 				</ul>
 
@@ -131,40 +131,104 @@
 						</div>
 				</div>
 			</div>
-
-
-
 			<!-- /showtimes -->
 
 
-
-
-		  <div class="text-center">
-			<form>
-				<h1 class="text-primary my-5" id="deals"> Sign up for Movie Club Rewards!</h1>
-				<div class="form-group">
-					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+			<!-- jumbotron heading-->
+			<div class="jumbotron jumbotron-fluid bg-info my-5 text-center">
+				<div class="container">
+				  <h1 class="display-4 hidden-sm-down" style="color:#fff;font-weight:500;text-transform:uppercase">Movie deals</h1>
+				  <p class="lead">Check out our monthly deals!</p>
+				  <!-- movie deals-->
+				  <button type="button" data-toggle="modal" data-target="#register" class="btn btn-outline-primary">See our monthly deals</button>
+				  <!-- /movie deals-->
 				</div>
-				<button type="submit" class="btn btn-primary">Submit</button>
-			</form>
-		  </div>
+			</div>
+			<!-- /jumbotron heading-->
 
-		  <div class="container my-5">
-			<ul class="nav nav-inline">
-				<li class="nav-item">
-					<small><a class="nav-link active" href="#">Movie Rewards</a></small>
-				</li>
-				<li class="nav-item">
-					<small><a class="nav-link" href="#">Movies@news.org</a></small>
-				</li>
-				<li class="nav-item">
-					<small><a class="nav-link" href="#">Info@academycinemas.com</a></small>
-				</li>
-				<li class="nav-item">
-					<small class="nav-link">&copy;2019 Academy Cinemas&reg;</small>
-				</li>
-			</ul>
-		  </div>
+			<!-- signup form-->
+			<div class="text-center">
+				<form>
+					<h1 class="text-primary my-5" id="deals">Sign up for Movie Club Rewards!</h1>
+					<div class="form-group">
+						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+					</div>
+						<button type="button" class="btn btn-secondary btn-info popover-dismiss" data-container="body" data-toggle="popover" data-placement="top" data-content="Submit your email to receive great movie deals.">
+						Sign up</button>
+				</form>
+			</div>
+			<!-- /signup form-->
+
+
+
+
+			<!--form modal-->
+			<div class="modal fade" id="register" tabindex="-1" role="dialog">
+				<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+					<h5 class="modal-title">Register to receive movie deals</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					</div>
+					<div class="modal-body">
+						<fieldset class="form-group">
+							<label for="firstname">First name:</label>
+							<input type="text" class="form-control" id="firstname" placeholder="First name ...">
+							<label for="lastname">Last name:</label>
+							<input type="text" class="form-control" id="lastname" placeholder="Last Name ...">
+							<!-- username input group-->
+							<label for="email">Username:</label>
+							<div class="input-group mb-3">
+								<div class="input-group-prepend">
+								  <span class="input-group-text" id="basic-addon1">@</span>
+								</div>
+								<input type="text" class="form-control" id="username" placeholder="Username ...">
+							  </div>
+							<!-- /username input group-->
+							<label for="password">Password:</label>
+							<input type="text" class="form-control" id="password" placeholder="Password ...">
+						</fieldset>
+
+
+
+
+					
+						
+
+
+
+					</div>
+					<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+				</div>
+				</div>
+			</div>
+			<!--/form modal-->
+
+
+
+			<!-- footer-->
+			<div class="container my-5">
+				<ul class="nav nav-inline">
+					<li class="nav-item">
+						<small><a class="nav-link active" href="#">Movie Rewards</a></small>
+					</li>
+					<li class="nav-item">
+						<small><a class="nav-link" href="#">Movies@news.org</a></small>
+					</li>
+					<li class="nav-item">
+						<small><a class="nav-link" href="#">Info@academycinemas.com</a></small>
+					</li>
+					<li class="nav-item">
+						<small class="nav-link">&copy;2019 Academy Cinemas&reg;</small>
+					</li>
+				</ul>
+			</div>
+			<!-- /footer-->
 
 
 
@@ -175,8 +239,14 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	
+	<script>
+		$('.popover-dismiss').popover({
+  			trigger: 'focus'
+		})
+	</script>
   </body>
 </html>
